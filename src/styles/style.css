@@ -23,8 +23,9 @@ picture {
   font-size: 0
 }
 
-video {
-  aspect-ratio: 16/9
+.video {
+  width: 500px;
+  height: 280px;
 }
 
 img,video {
@@ -175,7 +176,7 @@ main {
 .bahsegel,.bl_ceo a.bahsegel {
   text-align: center;
   display: block;
-  max-width: 194px;
+  max-width: 224px;
   margin: 20px auto;
   min-width: 100px;
   padding: 0 15px;
@@ -225,12 +226,6 @@ main {
 @media (min-width: 991px) {
   .header_wrapper {
       height:75px
-  }
-}
-
-@media (max-width: 400px) {
-  .header_wrapper {
-      padding:0 5px
   }
 }
 
@@ -760,7 +755,6 @@ main {
   margin: 15px auto;
   width: 80%;
   height: 18px;
-  /* background: url(../images/svg-icons/seo-panel-bg.svg) 50% 50% space; */
   background-size: contain
 }
 
@@ -1094,6 +1088,11 @@ footer > div > p {
   width: 50%;
 }
 
+@media (max-width: 1110px) {
+  .video_container {
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 720px) {
   .header_wrapper {
@@ -1122,5 +1121,10 @@ footer > div > p {
 
   .content {
     flex-direction: column;
+  }
+
+  .video {
+    width: 280px;
+    height: 200px; 
   }
 }
