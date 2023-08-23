@@ -965,12 +965,41 @@ footer > div > p {
 
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
   padding: 20px 0 30px;
+}
+
+.homepage {
+  width: 50%;
 }
 
 .table_container {
   overflow: auto;
+}
+
+.center_image {
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0;
+}
+
+.image_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.destek, .giris_image, .kayit, .license {
+  width: 250px;
+}
+
+.mobile {
+  width: 40%;
 }
 
 @media (max-width: 720px) {
@@ -984,5 +1013,21 @@ footer > div > p {
 
   .header+div, .header+main {
     padding-top: 120px;
+  }
+
+  .center_image {
+    width: 100%;
+  }
+
+  .image_container {
+    flex-direction: column;
+  }
+
+  .homepage, .mobile {
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
   }
 }
